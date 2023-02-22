@@ -1,0 +1,24 @@
+body {
+    margin: 0
+}
+
+.navBase {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+}
+
+.entries {
+    text-align: center;
+    transform: 'translate(-50%, -50%)',
+}
+
+.footerBase {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(205, 150, 40);
+    text-align: center;
+}
