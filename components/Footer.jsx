@@ -1,4 +1,10 @@
-
 export default function Footer() {
-    return (<div className='footerBase'> This is a Footer</div >)
+    const currentYear = new Date().getFullYear()
+
+    return (
+        <div className='footerBase'>
+            <div className='footerContent'>
+                Forrest Smietanski &copy; {currentYear}
+            </div>
+        </div>)
 }
