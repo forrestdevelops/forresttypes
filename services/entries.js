@@ -1,4 +1,4 @@
-import { dataEntries } from "data/rawData"
+import { dataEntries } from "services/data/rawData"
 
 const getEntries = async () => {
     return dataEntries
