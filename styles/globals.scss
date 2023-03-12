@@ -6,6 +6,18 @@ $base-font: "Barlow Condensed";
 
 body {
     margin: 0;
+    color: black;
+    font: $base-font;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    padding-left: 10px;
 }
 
 .navBase {
