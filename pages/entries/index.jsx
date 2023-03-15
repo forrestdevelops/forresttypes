@@ -7,8 +7,8 @@ export default function entries(props) {
             <h2>Entries</h2>
             {props.entries_data.map((entry) => {
                 return (
-                    <div key={entry.entry_id}>
-                        <Link href={`/entries/${entry.entry_id}`}>
+                    <div key={entry.id}>
+                        <Link href={`/entries/${entry.id}`}>
                             {entry.name}
                         </Link>
                     </div>)

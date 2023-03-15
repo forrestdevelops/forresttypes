@@ -25,10 +25,10 @@ const getEntries = async () => {
     }
 }
 
-const getEntry = async (entry_id) => {
-    const queryCreate = `Select * from entries where id = ${entry_id}; `
+const getEntry = async (id) => {
+    const queryCreate = `Select id, name, data from entries where id = ${id}; `
     const result = await query({ query: queryCreate });
-    return result;
+    return result[0];
 }
 
 export { getEntries, getEntry, createEntry }
