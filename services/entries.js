@@ -26,7 +26,9 @@ const getEntries = async () => {
 }
 
 const getEntry = async (entry_id) => {
-    return dataEntries.find(entry => entry.entry_id == entry_id)
+    const queryCreate = `Select * from entries where id = ${entry_id}; `
+    const result = await query({ query: queryCreate });
+    return result;
 }
 
 export { getEntries, getEntry, createEntry }
