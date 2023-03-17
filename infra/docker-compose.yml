@@ -1,0 +1,15 @@
+version: '1'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: forresttypes
+      MYSQL_DATABASE: forresttypes
+      MYSQL_USER: forrest
+      MYSQL_PASSWORD: forresttypes
+    ports:
+      - "3306:3306"
+    volumes:
+      - /tmp/mysql:/var/lib/mysqlc
